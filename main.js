@@ -26,7 +26,7 @@ client.on('ready', () => {
 
 client.on('guildMemberAdd', member => {
 
-    let welcomeChannelName = message.guild.find(channel => channel.name === 'welcome');
+    let welcomeChannelName = member.guild.channels.cache.get(channel => channel.name === 'welcome');
     let welcomeChannel = welcomeChannel.id;
 
 
