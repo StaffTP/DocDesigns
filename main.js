@@ -1,10 +1,12 @@
 const Discord = require('discord.js');
 
-const client = new Discord.Client({ws: {intents: discord.Intents.ALL}})
+const client = new Discord.Client()
 
 const prefix = '-';
 
 const fs = require('fs');
+
+const moment = require('moment');
 
 const memberCounter = require('./counters/member-counter');
 
@@ -26,8 +28,10 @@ client.on('ready', () => {
 
 client.on('guildMemberAdd', member => {
 
-    let welcomeChannelName = member.guild.channels.cache.get(channel => channel.name === 'welcome');
+    let welcomeChannelName = member.guild.channels.find(channel => channel.name === 'welcome');
     let welcomeChannel = welcomeChannel.id;
+
+    if (!welcomeChannelName) return;
 
 
     const welcomeEmbed = new Discord.MessageEmbed()
@@ -81,8 +85,10 @@ client.on('message', message => {
         client.commands.get('customer').execute(message, args, Discord);
     } else if (command === 'paypalconfirm'){
         client.commands.get('paypalconfirm').execute(message, args, Discord);
+    } else if (command === 'user-info'){
+        client.commands.get('user-info').execute(message, args, Discord, moment);
     }
 });
 
 
-client.login('TOKEN');
+client.login('NzkwNzEwODE1MzY2ODQwMzMw.X-Ek1Q.fPmZx5xx_QgYre58wsJnoqSazsE');
