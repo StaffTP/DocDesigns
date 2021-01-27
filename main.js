@@ -26,7 +26,7 @@ client.on('ready', () => {
     console.log('DocDesigns has started and logged in successfully.');
 });
 
-client.on('guildMemberAdd', member => {
+/*client.on('guildMemberAdd', member => {
 
     let welcomeChannelName = member.guild.channels.find(channel => channel.name === 'welcome');
     let welcomeChannel = welcomeChannel.id;
@@ -34,13 +34,13 @@ client.on('guildMemberAdd', member => {
     if (!welcomeChannelName) return;
 
 
-    const welcomeEmbed = new Discord.MessageEmbed()
+ const welcomeEmbed = new Discord.MessageEmbed()
     .setColor('#EA1E1E')
     .setTitle("Welcome to Doc Design's", member.nickname)
     .setImage(member.displayAvatarURL({dynamic: true}))
 
     welcomeChannelName.send(welcomeEmbed);
-})
+}) */
 
 
 client.on('message', message => {
