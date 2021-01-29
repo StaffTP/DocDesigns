@@ -3,7 +3,7 @@ const { GuildMember } = require("discord.js");
 
 module.exports = {
     name: 'user-info',
-    execute(message, args, Discord, moment, map){
+    execute(message, args, Discord, moment){
         let userinfoget = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.guild.member(message.author)
         const embed = new Discord.MessageEmbed()
         .setColor('#EC1811')

@@ -87,6 +87,8 @@ client.on('message', message => {
         client.commands.get('paypalconfirm').execute(message, args, Discord);
     } else if (command === 'user-info'){
         client.commands.get('user-info').execute(message, args, Discord, moment);
+    } else if (command === 'vckick'){
+        client.commands.get('vckick').execute(message, args, Discord)
     }
 });
 
