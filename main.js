@@ -89,6 +89,8 @@ client.on('message', message => {
         client.commands.get('user-info').execute(message, args, Discord, moment);
     } else if (command === 'verify'){
         client.commands.get('verify').execute(message, client)
+    } else if (command === 'giveaway'){
+        client.commands.get('giveaway').execute(message, args, Discord, client)
     }
 });
 
