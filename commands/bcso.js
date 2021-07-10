@@ -15,7 +15,7 @@ module.exports = {
             .setAuthor('Doc Designs')
             .setDescription('Thank you for purchasing the BCSO EUP package.')
             .addFields(
-                {name: 'Please download below.', value: '[Download](https://cdn.discordapp.com/attachments/708880517516361748/790703959018438666/BCSO.rar)'},
+                {name: 'Please download below.', value: '[Download](yourdownloadlinkhere)'},
     
             )
             .setImage('https://media.discordapp.net/attachments/708880517516361748/817997867670568960/DDsvg.png')

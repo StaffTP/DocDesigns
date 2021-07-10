@@ -10,7 +10,7 @@ module.exports = {
             .setAuthor('Doc Designs', 'https://media.discordapp.net/attachments/708880517516361748/817997867670568960/DDsvg.png', 'https://discord.gg/BE9HPDf7W8')
             .setDescription('Thank you for purchasing the Life EMS Package.')
             .addFields(
-                {name: 'Please download below.', value: '[Download](https://cdn.discordapp.com/attachments/708880517516361748/820055727192145981/LifeEMS-EUP.rar)'},
+                {name: 'Please download below.', value: '[Download](yourdownloadlinkhere)'},
     
             )
             .setImage('https://media.discordapp.net/attachments/708880517516361748/817997867670568960/DDsvg.png')

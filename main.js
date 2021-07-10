@@ -26,22 +26,6 @@ client.on('ready', () => {
     console.log('DocDesigns has started and logged in successfully.');
 });
 
-/*client.on('guildMemberAdd', member => {
-
-    let welcomeChannelName = member.guild.channels.find(channel => channel.name === 'welcome');
-    let welcomeChannel = welcomeChannel.id;
-
-    if (!welcomeChannelName) return;
-
-
- const welcomeEmbed = new Discord.MessageEmbed()
-    .setColor('#EA1E1E')
-    .setTitle("Welcome to Doc Design's", member.nickname)
-    .setImage(member.displayAvatarURL({dynamic: true}))
-
-    welcomeChannelName.send(welcomeEmbed);
-}) */
-
 
 client.on('message', message => {
     if(message.member != null && message.member.hasPermission('KICK_MEMBERS'));
@@ -99,4 +83,4 @@ client.on('message', message => {
 });
 
 
-client.login('##');
+client.login('tokengoeshere');

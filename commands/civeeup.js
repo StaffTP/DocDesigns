@@ -10,7 +10,7 @@ module.exports = {
             .setAuthor('Doc Designs')
             .setDescription('Thank you for purchasing the Civ EUP package.')
             .addFields(
-                {name: 'Please download below.', value: '[Download](https://drive.google.com/drive/folders/1ojsSq3QYI_vA3jDEIycTnB-SFRaM691U?usp=sharing)'},
+                {name: 'Please download below.', value: '[Download](yourdownloadlinkhere)'},
     
             )
             .setImage('https://media.discordapp.net/attachments/708880517516361748/817997867670568960/DDsvg.png')
